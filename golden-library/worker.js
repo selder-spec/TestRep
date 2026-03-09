@@ -75,6 +75,25 @@ export default {
         });
       }
       
+	  // serve static files from GitHub
+      if (request.method === "GET" && (url.pathname === "/style.css" || url.pathname === "/app.js")) {
+        const fileUrl = `https://raw.githubusercontent.com/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/HEAD/public${url.pathname}`;
+        
+        const res = await fetch(fileUrl);
+        
+        if (!res.ok) {
+          return new Response("File not found", { status: 404 });
+        }
+      
+        const contentType = url.pathname.endsWith(".css")
+          ? "text/css"
+          : "application/javascript";
+      
+        return new Response(await res.text(), {
+          headers: { "Content-Type": contentType }
+        });
+      }
+	  
       return new Response("Not found", { status: 404 });
     } catch (e) {
       return json({ error: e.message || String(e) }, 500);
