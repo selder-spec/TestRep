@@ -3,4 +3,5 @@ main = "worker.js"
 compatibility_date = "2026-03-09"
 
 [build]
-upload = { format = "service-worker" }
+command = ""
+upload = { dir = "public", format = "service-worker" }
