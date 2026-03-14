@@ -5,6 +5,5 @@ compatibility_date = "2024-01-01"
 [vars]
 GITHUB_OWNER = "selder-spec"
 GITHUB_REPO  = "TestRep"
-GITHUB_TOKEN = "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"
-ADMIN_PASSWORD = "11111111"
+
 # ADMIN_PASSWORD و GITHUB_TOKEN يُضافان كـ Secrets (انظر README)
