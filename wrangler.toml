@@ -1,0 +1,8 @@
+name = "digital-library"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+GITHUB_OWNER = "selder-spec"
+GITHUB_REPO  = "TestRep"
+# ADMIN_PASSWORD و GITHUB_TOKEN يُضافان كـ Secrets (انظر README)
