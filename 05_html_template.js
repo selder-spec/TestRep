@@ -530,7 +530,7 @@ main{max-width:1200px;margin:0 auto;padding:22px 18px 90px;position:relative;z-i
   <div id="articleReaderBar">
     <div id="articleReaderTitle">✍️ مقالة</div>
     <button id="articleEditBtn" style="background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.25);color:var(--accent);border-radius:6px;padding:5px 10px;cursor:pointer;font-size:12px;font-weight:600;transition:background .15s;white-space:nowrap;display:none">✏️ تعديل</button>
-    <button id="articleDeleteBtn">🗑 حذف</button>
+    <button id="articleDeleteBtn" style="display:none">🗑 حذف</button>
     <button id="articleCloseBtn">✕ إغلاق</button>
   </div>
   <div id="articleReaderBody"></div>
