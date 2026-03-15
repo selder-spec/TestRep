@@ -7,5 +7,22 @@
   "fileExt": "png",
   "file_path": "_admin/jj/اختبار-2.png",
   "owner": "__admin__",
-  "created_at": "2026-03-15T09:14:17.312Z"
+  "created_at": "2026-03-15T09:14:17.312Z",
+  "mediaFiles": [
+    {
+      "path": "_admin/jj/اختبار-2__media_0_Screenshot-2026-01-01-012401.png.png",
+      "name": "Screenshot 2026-01-01 012401.png",
+      "ext": "png"
+    },
+    {
+      "path": "_admin/jj/اختبار-2__media_1_Screenshot-2026-01-01-012908.png.png",
+      "name": "Screenshot 2026-01-01 012908.png",
+      "ext": "png"
+    },
+    {
+      "path": "_admin/jj/اختبار-2__media_2_Screenshot-2026-01-02-115711.png.png",
+      "name": "Screenshot 2026-01-02 115711.png",
+      "ext": "png"
+    }
+  ]
 }
