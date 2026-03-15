@@ -950,8 +950,8 @@ export function getClientScript(owner, repo, colorSwatchesHtml) {
     "  $('articleReaderTitle').textContent=article.title;\n" +
     "  var canEdit=(adminPass)||(currentUser&&article.author===currentUser.username);\n" +
     "  var canDelete=canEdit;\n" +
-    "  delBtn.style.display=canDelete?'':'none';\n" +
-    "  editBtn.style.display=canEdit?'':'none';\n" +
+    "  delBtn.style.display=canDelete?'inline-block':'none';\n" +
+    "  editBtn.style.display=canEdit?'inline-block':'none';\n" +
     "  delBtn.onclick=function(){ confirmDeleteArticle(article); };\n" +
     "  editBtn.onclick=function(){ showEditArticleModal(article); };\n" +
     "  var color=article.coverColor||'#c49a24', emoji=articleEmoji(article);\n" +
@@ -1799,4 +1799,3 @@ export function getClientScript(owner, repo, colorSwatchesHtml) {
     "" +
   "<\/script>";
 }
-//
